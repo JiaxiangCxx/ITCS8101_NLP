@@ -1,0 +1,61 @@
+map      , trial, method                , chromatic_number, backtracks, time_seconds             , status
+Australia,     1, DFS                   , 3               , 0         ,    0.00047590117901563644, OK
+Australia,     1, DFS+FC                , 3               , 0         ,    0.0007785330526530743 , OK
+Australia,     1, DFS+FC+PROP           , 3               , 0         ,    0.0008229478262364864 , OK
+Australia,     1, DFS+Heuristics        , 3               , 0         ,    0.0004927641712129116 , OK
+Australia,     1, DFS+FC+Heuristics     , 3               , 0         ,    0.0008113761432468891 , OK
+Australia,     1, DFS+FC+PROP+Heuristics, 3               , 0         ,    0.0007380959577858448 , OK
+Australia,     2, DFS                   , 3               , 0         ,    0.000420132651925087  , OK
+Australia,     2, DFS+FC                , 3               , 0         ,    0.0008057872764766216 , OK
+Australia,     2, DFS+FC+PROP           , 3               , 0         ,    0.0007080379873514175 , OK
+Australia,     2, DFS+Heuristics        , 3               , 0         ,    0.00047095585614442825, OK
+Australia,     2, DFS+FC+Heuristics     , 3               , 0         ,    0.0008092299103736877 , OK
+Australia,     2, DFS+FC+PROP+Heuristics, 3               , 0         ,    0.0007396861910820007 , OK
+Australia,     3, DFS                   , 3               , 0         ,    0.0004172050394117832 , OK
+Australia,     3, DFS+FC                , 3               , 0         ,    0.0007515102624893188 , OK
+Australia,     3, DFS+FC+PROP           , 3               , 0         ,    0.000716859009116888  , OK
+Australia,     3, DFS+Heuristics        , 3               , 0         ,    0.00047632912173867226, OK
+Australia,     3, DFS+FC+Heuristics     , 3               , 0         ,    0.0009366469457745552 , OK
+Australia,     3, DFS+FC+PROP+Heuristics, 3               , 0         ,    0.0007598688825964928 , OK
+Australia,     4, DFS                   , 3               , 0         ,    0.00042220065370202065, OK
+Australia,     4, DFS+FC                , 3               , 0         ,    0.0007712286897003651 , OK
+Australia,     4, DFS+FC+PROP           , 3               , 0         ,    0.0007358291186392307 , OK
+Australia,     4, DFS+Heuristics        , 3               , 0         ,    0.00047695403918623924, OK
+Australia,     4, DFS+FC+Heuristics     , 3               , 0         ,    0.0008204616606235504 , OK
+Australia,     4, DFS+FC+PROP+Heuristics, 3               , 0         ,    0.0007383450865745544 , OK
+Australia,     5, DFS                   , 3               , 0         ,    0.00040388433262705803, OK
+Australia,     5, DFS+FC                , 3               , 0         ,    0.000757772009819746  , OK
+Australia,     5, DFS+FC+PROP           , 3               , 0         ,    0.0007143286056816578 , OK
+Australia,     5, DFS+Heuristics        , 3               , 0         ,    0.00047442223876714706, OK
+Australia,     5, DFS+FC+Heuristics     , 3               , 0         ,    0.0007973331958055496 , OK
+Australia,     5, DFS+FC+PROP+Heuristics, 3               , 0         ,    0.00072849215939641   , OK
+USA      ,     1, DFS                   , TIMEOUT         , TIMEOUT   ,  300                     , TIMEOUT
+USA      ,     1, DFS+FC                , TIMEOUT         , TIMEOUT   ,  180                     , TIMEOUT
+USA      ,     1, DFS+FC+PROP           , 4               , 123       ,    0.23248342517763376   , OK
+USA      ,     1, DFS+Heuristics        , 4               , 3201544   , 1190.4043818721548       , OK
+USA      ,     1, DFS+FC+Heuristics     , 4               , 0         ,    0.03854906791821122   , OK
+USA      ,     1, DFS+FC+PROP+Heuristics, 4               , 0         ,    0.05854016030207276   , OK
+USA      ,     2, DFS                   , 4               , 46118     ,   16.43149591330439      , OK
+USA      ,     2, DFS+FC                , 4               , 13846     ,    9.567300045862794     , OK
+USA      ,     2, DFS+FC+PROP           , 4               , 381       ,    0.5898805866017938    , OK
+USA      ,     2, DFS+Heuristics        , 4               , 3201544   , 1181.8576055709273       , OK
+USA      ,     2, DFS+FC+Heuristics     , 4               , 0         ,    0.03928463300690055   , OK
+USA      ,     2, DFS+FC+PROP+Heuristics, 4               , 0         ,    0.06125258468091488   , OK
+USA      ,     3, DFS                   , TIMEOUT         , TIMEOUT   ,  300                     , TIMEOUT
+USA      ,     3, DFS+FC                , TIMEOUT         , TIMEOUT   ,  180                     , TIMEOUT
+USA      ,     3, DFS+FC+PROP           , 4               , 0         ,    0.045314937829971313  , OK
+USA      ,     3, DFS+Heuristics        , 4               , 3201544   , 1184.5961817121133       , OK
+USA      ,     3, DFS+FC+Heuristics     , 4               , 0         ,    0.03926850622519851   , OK
+USA      ,     3, DFS+FC+PROP+Heuristics, 4               , 0         ,    0.05366269312798977   , OK
+USA      ,     4, DFS                   , TIMEOUT         , TIMEOUT   ,  300                     , TIMEOUT
+USA      ,     4, DFS+FC                , TIMEOUT         , TIMEOUT   ,  180                     , TIMEOUT
+USA      ,     4, DFS+FC+PROP           , 4               , 133       ,    0.23816968500614166   , OK
+USA      ,     4, DFS+Heuristics        , 4               , 3201544   , 1183.6376594039612       , OK
+USA      ,     4, DFS+FC+Heuristics     , 4               , 0         ,    0.03858271474018693   , OK
+USA      ,     4, DFS+FC+PROP+Heuristics, 4               , 0         ,    0.05801393510773778   , OK
+USA      ,     5, DFS                   , TIMEOUT         , TIMEOUT   ,  300                     , TIMEOUT
+USA      ,     5, DFS+FC                , 4               , 40643     ,   28.69629659783095      , OK
+USA      ,     5, DFS+FC+PROP           , 4               , 144       ,    0.3184523261152208    , OK
+USA      ,     5, DFS+Heuristics        , 4               , 3201544   , 1178.627078149002        , OK
+USA      ,     5, DFS+FC+Heuristics     , 4               , 0         ,    0.03816385613754392   , OK
+USA      ,     5, DFS+FC+PROP+Heuristics, 4               , 0         ,    0.05400092480704188   , OK

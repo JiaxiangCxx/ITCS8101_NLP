@@ -1,0 +1,68 @@
+============================================================
+PROMPT MODE (greedy)
+============================================================
+Loading vocabulary from ../data/vocab.embeddings.txt...
+  Loaded 10001 tokens, EDim = 100.
+  Model loaded from lm_model.pt (K=4, H=2, N=100).
+
+Enter a sequence of tokens to use as prompt (empty to quit):
+
+>   Prompt: the girl told the
+  Generated: the girl told the little girl was so happy that he had to go to the park .
+
+>   Prompt: the bird then flew
+  Generated: the bird then flew down and saw a big tree .
+
+>   Prompt: the boys and the
+  Generated: the boys and the bird .
+
+>   Prompt: <unk> one <unk> a
+  Generated: <unk> one <unk> a big hug .
+
+>   Prompt: the elf told her
+  Generated: the elf told her to go to the park .
+
+>   Prompt: the witch was very
+  Generated: the witch was very happy .
+
+>   Prompt: once upon a time
+  Generated: once upon a time , there was a little girl named lily .
+
+> Exiting prompt mode.
+============================================================
+PROMPT MODE (greedy)
+============================================================
+Loading vocabulary from ../data/vocab.embeddings.txt...
+  Loaded 10001 tokens, EDim = 100.
+  Model loaded from lm_model.pt (K=4, H=2, N=100).
+
+Enter a sequence of tokens to use as prompt (empty to quit):
+
+>   Prompt: once upon a time
+  Generated: once upon a time , there was a little girl named lily .
+
+>   Prompt: once upon a time
+  Generated: once upon a time , there was a little girl named lily .
+
+>   Prompt: once upon a time
+  Generated: once upon a time , there was a little girl named lily .
+
+>   Prompt: once upon a time
+  Generated: once upon a time , there was a little girl named lily .
+
+>   Prompt: once upon a time
+  Generated: once upon a time , there was a little girl named lily .
+
+>   Prompt: once upon a time
+  Generated: once upon a time , there was a little girl named lily .
+
+>   Prompt: the girl told the
+  Generated: the girl told the little girl was so happy that he had to go to the park .
+
+>   Prompt: the bird then flew
+  Generated: the bird then flew down and saw a big tree .
+
+>   Prompt: the boys and the
+  Generated: the boys and the bird .
+
+> 

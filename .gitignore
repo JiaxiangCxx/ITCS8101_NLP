@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.env
+hw03/data/glove.6B/
+hw07/chatbot_server/data/restaurants.json
+hw07/chatbot_server/data/embeddings/

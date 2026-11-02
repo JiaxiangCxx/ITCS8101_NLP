@@ -1,0 +1,31 @@
+============================================================
+PROMPT MODE (sampling)
+============================================================
+Loading vocabulary from ../data/vocab.embeddings.txt...
+  Loaded 10001 tokens, EDim = 100.
+  Model loaded from lm_model.pt (K=4, H=2, N=100).
+
+Enter a sequence of tokens to use as prompt (empty to quit):
+
+>   Prompt: the girl told the
+  Generated: the girl told the boy , " why , bunny , have fun from the beach and this mean
+
+>   Prompt: the bird then flew
+  Generated: the bird then flew as fast .
+
+>   Prompt: the boys and the
+  Generated: the boys and the rocket weighed open the jug from it .
+
+>   Prompt: <unk> one <unk> a
+  Generated: <unk> one <unk> a crown gave to her friend tightly the island with her own trees or spoon a
+
+>   Prompt: the elf told her
+  Generated: the elf told her to make them and i 'm going to take another come to watch some more
+
+>   Prompt: the witch was very
+  Generated: the witch was very happy and alone next time and hugs some , and the pigs were successful friends
+
+>   Prompt: once upon a time
+  Generated: once upon a time , there was a poor man named some creative important .
+
+> Exiting prompt mode.

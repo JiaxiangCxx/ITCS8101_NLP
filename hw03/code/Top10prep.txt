@@ -1,0 +1,101 @@
+============================================================
+INTERACTIVE MODE
+============================================================
+Loading vocabulary from ../data/vocab.embeddings.txt...
+  Loaded 10001 tokens, EDim = 100.
+  Model loaded from lm_model.pt (K=4, H=2, N=100).
+
+Enter 4 space-separated tokens (empty to quit):
+
+>   Processed tokens: the girl told the
+  Top 10 predictions:
+    little               0.072077
+    bird                 0.035689
+    dog                  0.030354
+    bear                 0.022635
+    girl                 0.021820
+    boy                  0.020631
+    cat                  0.020503
+    man                  0.017150
+    old                  0.012748
+    end                  0.011857
+
+>   Processed tokens: the bird then flew
+  Top 10 predictions:
+    down                 0.141678
+    away                 0.128066
+    back                 0.068054
+    to                   0.066436
+    and                  0.063248
+    over                 0.050590
+    off                  0.037942
+    into                 0.027354
+    around               0.026953
+    closer               0.026574
+
+>   Processed tokens: the boys and the
+  Top 10 predictions:
+    bird                 0.034205
+    dog                  0.027449
+    end                  0.023590
+    boy                  0.023207
+    little               0.022241
+    girl                 0.019493
+    park                 0.017667
+    cat                  0.013646
+    man                  0.011936
+    bear                 0.010521
+
+>   Processed tokens: <unk> one <unk> a
+  Top 10 predictions:
+    big                  0.037673
+    little               0.025384
+    lot                  0.010433
+    great                0.009805
+    very                 0.009698
+    good                 0.009496
+    new                  0.007248
+    boy                  0.006805
+    beautiful            0.006797
+    small                0.006361
+
+>   Processed tokens: the elf told her
+  Top 10 predictions:
+    to                   0.272750
+    that                 0.121207
+    ,                    0.088446
+    about                0.080190
+    and                  0.048247
+    .                    0.041237
+    for                  0.033825
+    he                   0.032392
+    was                  0.022355
+    what                 0.019234
+
+>   Processed tokens: the witch was very
+  Top 10 predictions:
+    happy                0.270038
+    excited              0.079084
+    sad                  0.050239
+    proud                0.041006
+    curious              0.022382
+    kind                 0.020239
+    scared               0.017762
+    big                  0.016012
+    strong               0.015655
+    careful              0.015596
+
+>   Processed tokens: once upon a time
+  Top 10 predictions:
+    ,                    0.808265
+    there                0.179172
+    that                 0.002335
+    of                   0.001550
+    for                  0.001102
+    he                   0.000915
+    on                   0.000880
+    in                   0.000767
+    she                  0.000736
+    .                    0.000619
+
+> Exiting interactive mode.

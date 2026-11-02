@@ -1,0 +1,190 @@
+============================================================
+TRAINING
+============================================================
+Building vocabulary and embeddings...
+  Loaded embedding vocabulary: 400000 tokens.
+  Training vocabulary: 10000 tokens (from 10568 unique).
+  Loaded embeddings for 10000 tokens.
+  Final vocabulary: 10001 tokens, EDim = 100.
+Tokenizing training corpus...
+  Training tokens: 4000039
+Tokenizing validation corpus...
+  Validation tokens: 200070
+Creating training examples...
+  Training examples: 4000035
+Creating validation examples...
+  Validation examples: 200066
+
+Model architecture:
+FFLM(
+  (network): Sequential(
+    (0): Linear(in_features=400, out_features=100, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=100, out_features=100, bias=True)
+    (3): ReLU()
+    (4): Linear(in_features=100, out_features=10001, bias=True)
+  )
+)
+
+--- Epoch 1/1 ---
+  Batch    100 | Train loss (epoch avg): 6.4533 | Valid loss: 5.6381 | Valid PPL: 280.92
+  Batch    200 | Train loss (epoch avg): 5.9220 | Valid loss: 5.2572 | Valid PPL: 191.95
+  Batch    300 | Train loss (epoch avg): 5.6334 | Valid loss: 4.9439 | Valid PPL: 140.32
+  Batch    400 | Train loss (epoch avg): 5.4384 | Valid loss: 4.7471 | Valid PPL: 115.25
+  Batch    500 | Train loss (epoch avg): 5.2846 | Valid loss: 4.6053 | Valid PPL: 100.01
+  Batch    600 | Train loss (epoch avg): 5.1609 | Valid loss: 4.5240 | Valid PPL: 92.20
+  Batch    700 | Train loss (epoch avg): 5.0609 | Valid loss: 4.4365 | Valid PPL: 84.48
+  Batch    800 | Train loss (epoch avg): 4.9817 | Valid loss: 4.3802 | Valid PPL: 79.85
+  Batch    900 | Train loss (epoch avg): 4.9137 | Valid loss: 4.3286 | Valid PPL: 75.84
+  Batch   1000 | Train loss (epoch avg): 4.8540 | Valid loss: 4.2888 | Valid PPL: 72.88
+  Batch   1100 | Train loss (epoch avg): 4.8012 | Valid loss: 4.2417 | Valid PPL: 69.53
+  Batch   1200 | Train loss (epoch avg): 4.7548 | Valid loss: 4.2092 | Valid PPL: 67.30
+  Batch   1300 | Train loss (epoch avg): 4.7117 | Valid loss: 4.1734 | Valid PPL: 64.94
+  Batch   1400 | Train loss (epoch avg): 4.6710 | Valid loss: 4.1451 | Valid PPL: 63.12
+  Batch   1500 | Train loss (epoch avg): 4.6360 | Valid loss: 4.1276 | Valid PPL: 62.03
+  Batch   1600 | Train loss (epoch avg): 4.6047 | Valid loss: 4.0919 | Valid PPL: 59.85
+  Batch   1700 | Train loss (epoch avg): 4.5734 | Valid loss: 4.0705 | Valid PPL: 58.59
+  Batch   1800 | Train loss (epoch avg): 4.5446 | Valid loss: 4.0521 | Valid PPL: 57.52
+  Batch   1900 | Train loss (epoch avg): 4.5186 | Valid loss: 4.0387 | Valid PPL: 56.75
+  Batch   2000 | Train loss (epoch avg): 4.4935 | Valid loss: 4.0101 | Valid PPL: 55.15
+  Batch   2100 | Train loss (epoch avg): 4.4720 | Valid loss: 3.9942 | Valid PPL: 54.28
+  Batch   2200 | Train loss (epoch avg): 4.4496 | Valid loss: 3.9785 | Valid PPL: 53.43
+  Batch   2300 | Train loss (epoch avg): 4.4282 | Valid loss: 3.9654 | Valid PPL: 52.74
+  Batch   2400 | Train loss (epoch avg): 4.4080 | Valid loss: 3.9555 | Valid PPL: 52.22
+  Batch   2500 | Train loss (epoch avg): 4.3885 | Valid loss: 3.9505 | Valid PPL: 51.96
+  Batch   2600 | Train loss (epoch avg): 4.3715 | Valid loss: 3.9363 | Valid PPL: 51.23
+  Batch   2700 | Train loss (epoch avg): 4.3550 | Valid loss: 3.9229 | Valid PPL: 50.55
+  Batch   2800 | Train loss (epoch avg): 4.3384 | Valid loss: 3.9057 | Valid PPL: 49.68
+  Batch   2900 | Train loss (epoch avg): 4.3237 | Valid loss: 3.8971 | Valid PPL: 49.26
+  Batch   3000 | Train loss (epoch avg): 4.3095 | Valid loss: 3.8765 | Valid PPL: 48.25
+  Batch   3100 | Train loss (epoch avg): 4.2955 | Valid loss: 3.8697 | Valid PPL: 47.93
+  Batch   3200 | Train loss (epoch avg): 4.2819 | Valid loss: 3.8593 | Valid PPL: 47.43
+  Batch   3300 | Train loss (epoch avg): 4.2690 | Valid loss: 3.8469 | Valid PPL: 46.85
+  Batch   3400 | Train loss (epoch avg): 4.2563 | Valid loss: 3.8302 | Valid PPL: 46.07
+  Batch   3500 | Train loss (epoch avg): 4.2442 | Valid loss: 3.8266 | Valid PPL: 45.91
+  Batch   3600 | Train loss (epoch avg): 4.2319 | Valid loss: 3.8187 | Valid PPL: 45.55
+  Batch   3700 | Train loss (epoch avg): 4.2209 | Valid loss: 3.8147 | Valid PPL: 45.36
+  Batch   3800 | Train loss (epoch avg): 4.2101 | Valid loss: 3.8093 | Valid PPL: 45.12
+  Batch   3900 | Train loss (epoch avg): 4.2001 | Valid loss: 3.7944 | Valid PPL: 44.45
+  Batch   4000 | Train loss (epoch avg): 4.1899 | Valid loss: 3.7996 | Valid PPL: 44.68
+  Batch   4100 | Train loss (epoch avg): 4.1809 | Valid loss: 3.7779 | Valid PPL: 43.72
+  Batch   4200 | Train loss (epoch avg): 4.1706 | Valid loss: 3.7771 | Valid PPL: 43.69
+  Batch   4300 | Train loss (epoch avg): 4.1611 | Valid loss: 3.7723 | Valid PPL: 43.48
+  Batch   4400 | Train loss (epoch avg): 4.1518 | Valid loss: 3.7733 | Valid PPL: 43.52
+  Batch   4500 | Train loss (epoch avg): 4.1426 | Valid loss: 3.7650 | Valid PPL: 43.16
+  Batch   4600 | Train loss (epoch avg): 4.1342 | Valid loss: 3.7588 | Valid PPL: 42.90
+  Batch   4700 | Train loss (epoch avg): 4.1251 | Valid loss: 3.7399 | Valid PPL: 42.09
+  Batch   4800 | Train loss (epoch avg): 4.1171 | Valid loss: 3.7366 | Valid PPL: 41.95
+  Batch   4900 | Train loss (epoch avg): 4.1095 | Valid loss: 3.7344 | Valid PPL: 41.86
+  Batch   5000 | Train loss (epoch avg): 4.1018 | Valid loss: 3.7355 | Valid PPL: 41.91
+  Batch   5100 | Train loss (epoch avg): 4.0938 | Valid loss: 3.7227 | Valid PPL: 41.38
+  Batch   5200 | Train loss (epoch avg): 4.0866 | Valid loss: 3.7218 | Valid PPL: 41.34
+  Batch   5300 | Train loss (epoch avg): 4.0795 | Valid loss: 3.7249 | Valid PPL: 41.47
+  Batch   5400 | Train loss (epoch avg): 4.0727 | Valid loss: 3.7121 | Valid PPL: 40.94
+  Batch   5500 | Train loss (epoch avg): 4.0662 | Valid loss: 3.7217 | Valid PPL: 41.33
+  Batch   5600 | Train loss (epoch avg): 4.0596 | Valid loss: 3.7067 | Valid PPL: 40.72
+  Batch   5700 | Train loss (epoch avg): 4.0532 | Valid loss: 3.6964 | Valid PPL: 40.30
+  Batch   5800 | Train loss (epoch avg): 4.0473 | Valid loss: 3.6938 | Valid PPL: 40.20
+  Batch   5900 | Train loss (epoch avg): 4.0414 | Valid loss: 3.6887 | Valid PPL: 39.99
+  Batch   6000 | Train loss (epoch avg): 4.0357 | Valid loss: 3.6833 | Valid PPL: 39.78
+  Batch   6100 | Train loss (epoch avg): 4.0291 | Valid loss: 3.6776 | Valid PPL: 39.55
+  Batch   6200 | Train loss (epoch avg): 4.0230 | Valid loss: 3.6863 | Valid PPL: 39.90
+  Batch   6300 | Train loss (epoch avg): 4.0177 | Valid loss: 3.6839 | Valid PPL: 39.80
+  Batch   6400 | Train loss (epoch avg): 4.0119 | Valid loss: 3.6688 | Valid PPL: 39.21
+  Batch   6500 | Train loss (epoch avg): 4.0071 | Valid loss: 3.6671 | Valid PPL: 39.14
+  Batch   6600 | Train loss (epoch avg): 4.0022 | Valid loss: 3.6754 | Valid PPL: 39.47
+  Batch   6700 | Train loss (epoch avg): 3.9970 | Valid loss: 3.6616 | Valid PPL: 38.92
+  Batch   6800 | Train loss (epoch avg): 3.9920 | Valid loss: 3.6583 | Valid PPL: 38.80
+  Batch   6900 | Train loss (epoch avg): 3.9872 | Valid loss: 3.6599 | Valid PPL: 38.86
+  Batch   7000 | Train loss (epoch avg): 3.9823 | Valid loss: 3.6522 | Valid PPL: 38.56
+  Batch   7100 | Train loss (epoch avg): 3.9777 | Valid loss: 3.6512 | Valid PPL: 38.52
+  Batch   7200 | Train loss (epoch avg): 3.9731 | Valid loss: 3.6497 | Valid PPL: 38.46
+  Batch   7300 | Train loss (epoch avg): 3.9684 | Valid loss: 3.6401 | Valid PPL: 38.09
+  Batch   7400 | Train loss (epoch avg): 3.9641 | Valid loss: 3.6436 | Valid PPL: 38.23
+  Batch   7500 | Train loss (epoch avg): 3.9603 | Valid loss: 3.6407 | Valid PPL: 38.12
+  Batch   7600 | Train loss (epoch avg): 3.9559 | Valid loss: 3.6502 | Valid PPL: 38.48
+  Batch   7700 | Train loss (epoch avg): 3.9516 | Valid loss: 3.6350 | Valid PPL: 37.90
+  Batch   7800 | Train loss (epoch avg): 3.9478 | Valid loss: 3.6324 | Valid PPL: 37.80
+  Batch   7900 | Train loss (epoch avg): 3.9435 | Valid loss: 3.6351 | Valid PPL: 37.91
+  Batch   8000 | Train loss (epoch avg): 3.9391 | Valid loss: 3.6320 | Valid PPL: 37.79
+  Batch   8100 | Train loss (epoch avg): 3.9353 | Valid loss: 3.6285 | Valid PPL: 37.66
+  Batch   8200 | Train loss (epoch avg): 3.9314 | Valid loss: 3.6293 | Valid PPL: 37.69
+  Batch   8300 | Train loss (epoch avg): 3.9277 | Valid loss: 3.6272 | Valid PPL: 37.61
+  Batch   8400 | Train loss (epoch avg): 3.9237 | Valid loss: 3.6138 | Valid PPL: 37.11
+  Batch   8500 | Train loss (epoch avg): 3.9200 | Valid loss: 3.6226 | Valid PPL: 37.44
+  Batch   8600 | Train loss (epoch avg): 3.9161 | Valid loss: 3.6169 | Valid PPL: 37.22
+  Batch   8700 | Train loss (epoch avg): 3.9128 | Valid loss: 3.6199 | Valid PPL: 37.33
+  Batch   8800 | Train loss (epoch avg): 3.9092 | Valid loss: 3.6110 | Valid PPL: 37.00
+  Batch   8900 | Train loss (epoch avg): 3.9055 | Valid loss: 3.6082 | Valid PPL: 36.90
+  Batch   9000 | Train loss (epoch avg): 3.9018 | Valid loss: 3.6085 | Valid PPL: 36.91
+  Batch   9100 | Train loss (epoch avg): 3.8991 | Valid loss: 3.6026 | Valid PPL: 36.69
+  Batch   9200 | Train loss (epoch avg): 3.8958 | Valid loss: 3.6058 | Valid PPL: 36.81
+  Batch   9300 | Train loss (epoch avg): 3.8927 | Valid loss: 3.5976 | Valid PPL: 36.51
+  Batch   9400 | Train loss (epoch avg): 3.8896 | Valid loss: 3.5960 | Valid PPL: 36.45
+  Batch   9500 | Train loss (epoch avg): 3.8863 | Valid loss: 3.5943 | Valid PPL: 36.39
+  Batch   9600 | Train loss (epoch avg): 3.8832 | Valid loss: 3.5880 | Valid PPL: 36.16
+  Batch   9700 | Train loss (epoch avg): 3.8800 | Valid loss: 3.5889 | Valid PPL: 36.19
+  Batch   9800 | Train loss (epoch avg): 3.8768 | Valid loss: 3.5879 | Valid PPL: 36.16
+  Batch   9900 | Train loss (epoch avg): 3.8737 | Valid loss: 3.5878 | Valid PPL: 36.15
+  Batch  10000 | Train loss (epoch avg): 3.8704 | Valid loss: 3.5827 | Valid PPL: 35.97
+  Batch  10100 | Train loss (epoch avg): 3.8675 | Valid loss: 3.5930 | Valid PPL: 36.34
+  Batch  10200 | Train loss (epoch avg): 3.8644 | Valid loss: 3.5790 | Valid PPL: 35.84
+  Batch  10300 | Train loss (epoch avg): 3.8619 | Valid loss: 3.5787 | Valid PPL: 35.83
+  Batch  10400 | Train loss (epoch avg): 3.8592 | Valid loss: 3.5793 | Valid PPL: 35.85
+  Batch  10500 | Train loss (epoch avg): 3.8563 | Valid loss: 3.5807 | Valid PPL: 35.90
+  Batch  10600 | Train loss (epoch avg): 3.8535 | Valid loss: 3.5825 | Valid PPL: 35.96
+  Batch  10700 | Train loss (epoch avg): 3.8510 | Valid loss: 3.5728 | Valid PPL: 35.62
+  Batch  10800 | Train loss (epoch avg): 3.8484 | Valid loss: 3.5732 | Valid PPL: 35.63
+  Batch  10900 | Train loss (epoch avg): 3.8458 | Valid loss: 3.5742 | Valid PPL: 35.67
+  Batch  11000 | Train loss (epoch avg): 3.8435 | Valid loss: 3.5677 | Valid PPL: 35.44
+  Batch  11100 | Train loss (epoch avg): 3.8409 | Valid loss: 3.5759 | Valid PPL: 35.73
+  Batch  11200 | Train loss (epoch avg): 3.8385 | Valid loss: 3.5737 | Valid PPL: 35.65
+  Batch  11300 | Train loss (epoch avg): 3.8359 | Valid loss: 3.5760 | Valid PPL: 35.73
+  Batch  11400 | Train loss (epoch avg): 3.8335 | Valid loss: 3.5635 | Valid PPL: 35.29
+  Batch  11500 | Train loss (epoch avg): 3.8310 | Valid loss: 3.5644 | Valid PPL: 35.32
+  Batch  11600 | Train loss (epoch avg): 3.8287 | Valid loss: 3.5693 | Valid PPL: 35.49
+  Batch  11700 | Train loss (epoch avg): 3.8260 | Valid loss: 3.5595 | Valid PPL: 35.15
+  Batch  11800 | Train loss (epoch avg): 3.8238 | Valid loss: 3.5644 | Valid PPL: 35.32
+  Batch  11900 | Train loss (epoch avg): 3.8214 | Valid loss: 3.5578 | Valid PPL: 35.09
+  Batch  12000 | Train loss (epoch avg): 3.8191 | Valid loss: 3.5586 | Valid PPL: 35.11
+  Batch  12100 | Train loss (epoch avg): 3.8170 | Valid loss: 3.5591 | Valid PPL: 35.13
+  Batch  12200 | Train loss (epoch avg): 3.8148 | Valid loss: 3.5679 | Valid PPL: 35.44
+  Batch  12300 | Train loss (epoch avg): 3.8125 | Valid loss: 3.5521 | Valid PPL: 34.89
+  Batch  12400 | Train loss (epoch avg): 3.8103 | Valid loss: 3.5483 | Valid PPL: 34.75
+  Batch  12500 | Train loss (epoch avg): 3.8083 | Valid loss: 3.5463 | Valid PPL: 34.68
+  Batch  12600 | Train loss (epoch avg): 3.8062 | Valid loss: 3.5491 | Valid PPL: 34.78
+  Batch  12700 | Train loss (epoch avg): 3.8040 | Valid loss: 3.5515 | Valid PPL: 34.87
+  Batch  12800 | Train loss (epoch avg): 3.8020 | Valid loss: 3.5457 | Valid PPL: 34.66
+  Batch  12900 | Train loss (epoch avg): 3.8001 | Valid loss: 3.5513 | Valid PPL: 34.86
+  Batch  13000 | Train loss (epoch avg): 3.7981 | Valid loss: 3.5460 | Valid PPL: 34.68
+  Batch  13100 | Train loss (epoch avg): 3.7961 | Valid loss: 3.5562 | Valid PPL: 35.03
+  Batch  13200 | Train loss (epoch avg): 3.7942 | Valid loss: 3.5510 | Valid PPL: 34.85
+  Batch  13300 | Train loss (epoch avg): 3.7920 | Valid loss: 3.5468 | Valid PPL: 34.70
+  Batch  13400 | Train loss (epoch avg): 3.7904 | Valid loss: 3.5536 | Valid PPL: 34.94
+  Batch  13500 | Train loss (epoch avg): 3.7881 | Valid loss: 3.5519 | Valid PPL: 34.88
+  Batch  13600 | Train loss (epoch avg): 3.7864 | Valid loss: 3.5435 | Valid PPL: 34.59
+  Batch  13700 | Train loss (epoch avg): 3.7847 | Valid loss: 3.5555 | Valid PPL: 35.00
+  Batch  13800 | Train loss (epoch avg): 3.7831 | Valid loss: 3.5358 | Valid PPL: 34.32
+  Batch  13900 | Train loss (epoch avg): 3.7814 | Valid loss: 3.5377 | Valid PPL: 34.39
+  Batch  14000 | Train loss (epoch avg): 3.7796 | Valid loss: 3.5416 | Valid PPL: 34.52
+  Batch  14100 | Train loss (epoch avg): 3.7779 | Valid loss: 3.5426 | Valid PPL: 34.56
+  Batch  14200 | Train loss (epoch avg): 3.7762 | Valid loss: 3.5384 | Valid PPL: 34.41
+  Batch  14300 | Train loss (epoch avg): 3.7744 | Valid loss: 3.5346 | Valid PPL: 34.28
+  Batch  14400 | Train loss (epoch avg): 3.7728 | Valid loss: 3.5317 | Valid PPL: 34.18
+  Batch  14500 | Train loss (epoch avg): 3.7711 | Valid loss: 3.5385 | Valid PPL: 34.41
+  Batch  14600 | Train loss (epoch avg): 3.7695 | Valid loss: 3.5393 | Valid PPL: 34.44
+  Batch  14700 | Train loss (epoch avg): 3.7678 | Valid loss: 3.5282 | Valid PPL: 34.06
+  Batch  14800 | Train loss (epoch avg): 3.7662 | Valid loss: 3.5322 | Valid PPL: 34.20
+  Batch  14900 | Train loss (epoch avg): 3.7644 | Valid loss: 3.5302 | Valid PPL: 34.13
+  Batch  15000 | Train loss (epoch avg): 3.7628 | Valid loss: 3.5323 | Valid PPL: 34.20
+  Batch  15100 | Train loss (epoch avg): 3.7611 | Valid loss: 3.5251 | Valid PPL: 33.96
+  Batch  15200 | Train loss (epoch avg): 3.7596 | Valid loss: 3.5264 | Valid PPL: 34.00
+  Batch  15300 | Train loss (epoch avg): 3.7580 | Valid loss: 3.5336 | Valid PPL: 34.25
+  Batch  15400 | Train loss (epoch avg): 3.7565 | Valid loss: 3.5234 | Valid PPL: 33.90
+  Batch  15500 | Train loss (epoch avg): 3.7549 | Valid loss: 3.5276 | Valid PPL: 34.04
+  Batch  15600 | Train loss (epoch avg): 3.7532 | Valid loss: 3.5264 | Valid PPL: 34.00
+  Epoch 1 done | Avg train loss: 3.7529 | Valid loss: 3.5266 | Valid PPL: 34.01
+
+  Model saved to lm_model.pt (K=4, H=2, N=100).
+  Saved vocabulary embeddings to ../data/vocab.embeddings.txt.
+Training complete.

@@ -1,0 +1,327 @@
+============================================================
+TRAINING
+============================================================
+Using device: cuda
+Building vocabulary from training corpus...
+  Vocabulary: 10003 tokens (from 12415 unique, incl. <unk>, <bos>, <eos>).
+Reading training stories...
+  Training stories: 19131
+  Training tokens (targets): 4019242
+Reading validation stories...
+  Validation stories: 1101
+
+Model architecture:
+TransformerLM(
+  (embedding): Embedding(10003, 128, padding_idx=0)
+  (pos_encoder): SinusoidalPositionalEncoding(
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+  (layers): ModuleList(
+    (0-7): 8 x TransformerDecoderLayer(
+      (self_attn): MultiHeadSelfAttention(
+        (W_q): Linear(in_features=128, out_features=128, bias=True)
+        (W_k): Linear(in_features=128, out_features=128, bias=True)
+        (W_v): Linear(in_features=128, out_features=128, bias=True)
+        (W_o): Linear(in_features=128, out_features=128, bias=True)
+        (attn_dropout): Dropout(p=0.1, inplace=False)
+      )
+      (ffn): FeedForwardNetwork(
+        (linear1): Linear(in_features=128, out_features=512, bias=True)
+        (linear2): Linear(in_features=512, out_features=128, bias=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+        (activation): ReLU()
+      )
+      (norm1): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+      (norm2): LayerNorm((128,), eps=1e-05, elementwise_affine=True)
+      (dropout1): Dropout(p=0.1, inplace=False)
+      (dropout2): Dropout(p=0.1, inplace=False)
+    )
+  )
+  (output_layer): Linear(in_features=128, out_features=10003, bias=False)
+)
+
+  Trainable parameters: 2,866,560 / 2,866,560 total
+
+--- Epoch 1/4 ---
+  Batch    100 | Train loss (epoch avg): 6.2565 | Valid loss: 5.7555 | Valid PPL: 315.93
+  Batch    200 | Train loss (epoch avg): 5.9769 | Valid loss: 5.6298 | Valid PPL: 278.61
+  Batch    300 | Train loss (epoch avg): 5.8616 | Valid loss: 5.6083 | Valid PPL: 272.68
+  Batch    400 | Train loss (epoch avg): 5.7995 | Valid loss: 5.5891 | Valid PPL: 267.50
+  Batch    500 | Train loss (epoch avg): 5.7622 | Valid loss: 5.5698 | Valid PPL: 262.37
+  Batch    600 | Train loss (epoch avg): 5.7357 | Valid loss: 5.5802 | Valid PPL: 265.12
+  Batch    700 | Train loss (epoch avg): 5.7128 | Valid loss: 5.5582 | Valid PPL: 259.35
+  Batch    800 | Train loss (epoch avg): 5.6962 | Valid loss: 5.5580 | Valid PPL: 259.30
+  Batch    900 | Train loss (epoch avg): 5.6830 | Valid loss: 5.5640 | Valid PPL: 260.86
+  Batch   1000 | Train loss (epoch avg): 5.6712 | Valid loss: 5.5532 | Valid PPL: 258.07
+  Batch   1100 | Train loss (epoch avg): 5.6629 | Valid loss: 5.5433 | Valid PPL: 255.52
+  Batch   1200 | Train loss (epoch avg): 5.6542 | Valid loss: 5.5541 | Valid PPL: 258.31
+  Batch   1300 | Train loss (epoch avg): 5.6478 | Valid loss: 5.5419 | Valid PPL: 255.15
+  Batch   1400 | Train loss (epoch avg): 5.6437 | Valid loss: 5.5456 | Valid PPL: 256.11
+  Batch   1500 | Train loss (epoch avg): 5.6378 | Valid loss: 5.5474 | Valid PPL: 256.57
+  Batch   1600 | Train loss (epoch avg): 5.6331 | Valid loss: 5.5670 | Valid PPL: 261.64
+  Batch   1700 | Train loss (epoch avg): 5.6290 | Valid loss: 5.5579 | Valid PPL: 259.28
+  Batch   1800 | Train loss (epoch avg): 5.6243 | Valid loss: 5.5747 | Valid PPL: 263.68
+  Batch   1900 | Train loss (epoch avg): 5.6205 | Valid loss: 5.5563 | Valid PPL: 258.87
+  Epoch 1 done | Avg train loss: 5.6197 | Valid loss: 5.5652 | Valid PPL: 261.18
+
+--- Epoch 2/4 ---
+  Batch   2000 | Train loss (epoch avg): 5.5383 | Valid loss: 5.5774 | Valid PPL: 264.39
+  Batch   2100 | Train loss (epoch avg): 5.5491 | Valid loss: 5.6394 | Valid PPL: 281.30
+  Batch   2200 | Train loss (epoch avg): 5.5613 | Valid loss: 5.7014 | Valid PPL: 299.30
+  Batch   2300 | Train loss (epoch avg): 5.5573 | Valid loss: 5.6789 | Valid PPL: 292.64
+  Batch   2400 | Train loss (epoch avg): 5.5505 | Valid loss: 5.7008 | Valid PPL: 299.10
+  Batch   2500 | Train loss (epoch avg): 5.5520 | Valid loss: 7.0151 | Valid PPL: 1113.37
+  Batch   2600 | Train loss (epoch avg): 5.5564 | Valid loss: 5.8703 | Valid PPL: 354.36
+  Batch   2700 | Train loss (epoch avg): 5.5578 | Valid loss: 8.2446 | Valid PPL: 3806.89
+  Batch   2800 | Train loss (epoch avg): 5.5640 | Valid loss: 8.5342 | Valid PPL: 5085.73
+  Batch   2900 | Train loss (epoch avg): 5.5679 | Valid loss: 8.4428 | Valid PPL: 4641.66
+  Batch   3000 | Train loss (epoch avg): 5.5702 | Valid loss: 7.8982 | Valid PPL: 2692.53
+  Batch   3100 | Train loss (epoch avg): 5.5730 | Valid loss: 8.6914 | Valid PPL: 5951.57
+  Batch   3200 | Train loss (epoch avg): 5.5757 | Valid loss: 8.7966 | Valid PPL: 6611.60
+  Batch   3300 | Train loss (epoch avg): 5.5772 | Valid loss: 8.9115 | Valid PPL: 7416.80
+  Batch   3400 | Train loss (epoch avg): 5.5784 | Valid loss: 8.4260 | Valid PPL: 4564.21
+  Batch   3500 | Train loss (epoch avg): 5.5801 | Valid loss: 8.8376 | Valid PPL: 6888.17
+  Batch   3600 | Train loss (epoch avg): 5.5812 | Valid loss: 8.8931 | Valid PPL: 7281.41
+  Batch   3700 | Train loss (epoch avg): 5.5825 | Valid loss: 8.6432 | Valid PPL: 5671.33
+  Batch   3800 | Train loss (epoch avg): 5.5823 | Valid loss: 8.9285 | Valid PPL: 7543.67
+  Epoch 2 done | Avg train loss: 5.5823 | Valid loss: 8.9545 | Valid PPL: 7742.87
+
+--- Epoch 3/4 ---
+  Batch   3900 | Train loss (epoch avg): 5.5989 | Valid loss: 8.7752 | Valid PPL: 6471.57
+  Batch   4000 | Train loss (epoch avg): 5.5924 | Valid loss: 9.1322 | Valid PPL: 9248.35
+  Batch   4100 | Train loss (epoch avg): 5.5859 | Valid loss: 9.0791 | Valid PPL: 8770.32
+  Batch   4200 | Train loss (epoch avg): 5.5857 | Valid loss: 8.7475 | Valid PPL: 6294.89
+  Batch   4300 | Train loss (epoch avg): 5.5838 | Valid loss: 8.8072 | Valid PPL: 6682.14
+  Batch   4400 | Train loss (epoch avg): 5.5850 | Valid loss: 8.7087 | Valid PPL: 6055.27
+  Batch   4500 | Train loss (epoch avg): 5.5857 | Valid loss: 8.8749 | Valid PPL: 7150.27
+  Batch   4600 | Train loss (epoch avg): 5.5851 | Valid loss: 8.9645 | Valid PPL: 7820.59
+  Batch   4700 | Train loss (epoch avg): 5.5838 | Valid loss: 8.8672 | Valid PPL: 7095.71
+  Batch   4800 | Train loss (epoch avg): 5.5823 | Valid loss: 9.0538 | Valid PPL: 8550.61
+  Batch   4900 | Train loss (epoch avg): 5.5827 | Valid loss: 9.0019 | Valid PPL: 8118.15
+  Batch   5000 | Train loss (epoch avg): 5.5831 | Valid loss: 9.3640 | Valid PPL: 11660.40
+  Batch   5100 | Train loss (epoch avg): 5.5822 | Valid loss: 9.2160 | Valid PPL: 10056.54
+  Batch   5200 | Train loss (epoch avg): 5.5818 | Valid loss: 9.4125 | Valid PPL: 12239.89
+  Batch   5300 | Train loss (epoch avg): 5.5808 | Valid loss: 9.3997 | Valid PPL: 12084.23
+  Batch   5400 | Train loss (epoch avg): 5.5795 | Valid loss: 9.3475 | Valid PPL: 11470.01
+  Batch   5500 | Train loss (epoch avg): 5.5799 | Valid loss: 8.9434 | Valid PPL: 7657.22
+  Batch   5600 | Train loss (epoch avg): 5.5790 | Valid loss: 9.6889 | Valid PPL: 16137.66
+  Batch   5700 | Train loss (epoch avg): 5.5780 | Valid loss: 9.6606 | Valid PPL: 15686.88
+  Epoch 3 done | Avg train loss: 5.5779 | Valid loss: 9.1827 | Valid PPL: 9727.69
+
+--- Epoch 4/4 ---
+  Batch   5800 | Train loss (epoch avg): 5.5658 | Valid loss: 9.3338 | Valid PPL: 11314.11
+  Batch   5900 | Train loss (epoch avg): 5.5674 | Valid loss: 9.2128 | Valid PPL: 10024.94
+  Batch   6000 | Train loss (epoch avg): 5.5658 | Valid loss: 8.9458 | Valid PPL: 7675.82
+  Batch   6100 | Train loss (epoch avg): 5.5645 | Valid loss: 9.4901 | Valid PPL: 13228.23
+  Batch   6200 | Train loss (epoch avg): 5.5645 | Valid loss: 9.7614 | Valid PPL: 17350.96
+  Batch   6300 | Train loss (epoch avg): 5.5656 | Valid loss: 9.3211 | Valid PPL: 11170.91
+  Batch   6400 | Train loss (epoch avg): 5.5672 | Valid loss: 8.6801 | Valid PPL: 5884.92
+  Batch   6500 | Train loss (epoch avg): 5.5662 | Valid loss: 9.8777 | Valid PPL: 19489.94
+  Batch   6600 | Train loss (epoch avg): 5.5669 | Valid loss: 9.5915 | Valid PPL: 14640.15
+  Batch   6700 | Train loss (epoch avg): 5.5670 | Valid loss: 9.5388 | Valid PPL: 13888.87
+  Batch   6800 | Train loss (epoch avg): 5.5660 | Valid loss: 9.5625 | Valid PPL: 14220.65
+  Batch   6900 | Train loss (epoch avg): 5.5667 | Valid loss: 9.1730 | Valid PPL: 9633.43
+  Batch   7000 | Train loss (epoch avg): 5.5671 | Valid loss: 9.8483 | Valid PPL: 18925.60
+  Batch   7100 | Train loss (epoch avg): 5.5661 | Valid loss: 9.6841 | Valid PPL: 16060.19
+  Batch   7200 | Train loss (epoch avg): 5.5663 | Valid loss: 9.3580 | Valid PPL: 11591.56
+  Batch   7300 | Train loss (epoch avg): 5.5662 | Valid loss: 9.2309 | Valid PPL: 10207.98
+  Batch   7400 | Train loss (epoch avg): 5.5659 | Valid loss: 9.6235 | Valid PPL: 15116.62
+  Batch   7500 | Train loss (epoch avg): 5.5656 | Valid loss: 9.2015 | Valid PPL: 9912.22
+  Batch   7600 | Train loss (epoch avg): 5.5658 | Valid loss: 9.6381 | Valid PPL: 15337.74
+  Epoch 4 done | Avg train loss: 5.5661 | Valid loss: 9.3655 | Valid PPL: 11678.08
+
+  Model saved to lm_model.pt.
+  Saved vocabulary to ../data/vocab.txt.
+Training complete.
+============================================================
+INTERACTIVE MODE
+============================================================
+Loading vocabulary from ../data/vocab.txt...
+  Loaded 10003 tokens.
+  Model loaded from lm_model.pt (layers=8, d_model=128, heads=4, ffn=512, act=relu, norm_first=False).
+
+Enter tokens separated by spaces (empty to quit):
+
+>   Processed tokens: <bos> there was a girl
+  Top 10 predictions:
+    once                 0.624460
+    one                  0.066435
+    upon                 0.058757
+    lily                 0.036977
+    tom                  0.026292
+    john                 0.018321
+    and                  0.014808
+    sara                 0.012855
+    anna                 0.011885
+    there                0.009275
+
+>   Processed tokens: <bos> one <unk> a bird
+  Top 10 predictions:
+    once                 0.624460
+    one                  0.066435
+    upon                 0.058757
+    lily                 0.036977
+    tom                  0.026291
+    john                 0.018321
+    and                  0.014808
+    sara                 0.012855
+    anna                 0.011885
+    there                0.009275
+
+>   Processed tokens: <bos> there once was a boys and
+  Top 10 predictions:
+    once                 0.624460
+    one                  0.066435
+    upon                 0.058757
+    lily                 0.036977
+    tom                  0.026292
+    john                 0.018321
+    and                  0.014808
+    sara                 0.012855
+    anna                 0.011885
+    there                0.009275
+
+>   Processed tokens: <bos> one day , a
+  Top 10 predictions:
+    once                 0.624460
+    one                  0.066435
+    upon                 0.058757
+    lily                 0.036977
+    tom                  0.026292
+    john                 0.018321
+    and                  0.014808
+    sara                 0.012855
+    anna                 0.011885
+    there                0.009275
+
+>   Processed tokens: <bos> once upon a time , an elf
+  Top 10 predictions:
+    once                 0.624460
+    one                  0.066435
+    upon                 0.058757
+    lily                 0.036977
+    tom                  0.026291
+    john                 0.018321
+    and                  0.014808
+    sara                 0.012855
+    anna                 0.011885
+    there                0.009275
+
+>   Processed tokens: <bos> once upon a time
+  Top 10 predictions:
+    once                 0.624460
+    one                  0.066435
+    upon                 0.058757
+    lily                 0.036977
+    tom                  0.026291
+    john                 0.018321
+    and                  0.014808
+    sara                 0.012855
+    anna                 0.011885
+    there                0.009275
+
+> Exiting interactive mode.
+============================================================
+PROMPT MODE (greedy)
+============================================================
+Loading vocabulary from ../data/vocab.txt...
+  Loaded 10003 tokens.
+  Model loaded from lm_model.pt (layers=8, d_model=128, heads=4, ffn=512, act=relu, norm_first=False).
+
+Enter a sequence of tokens to use as prompt (empty to quit):
+
+>   Prompt: <bos> there was a girl
+  Generated: there was a girl once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> one <unk> a bird
+  Generated: one <unk> a bird once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> there once was a boys and
+  Generated: there once was a boys and once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> one day , a
+  Generated: one day , a once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> once upon a time , an elf
+  Generated: once upon a time , an elf once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once once
+
+> Exiting prompt mode.
+============================================================
+PROMPT MODE (sampling)
+============================================================
+Loading vocabulary from ../data/vocab.txt...
+  Loaded 10003 tokens.
+  Model loaded from lm_model.pt (layers=8, d_model=128, heads=4, ffn=512, act=relu, norm_first=False).
+
+Enter a sequence of tokens to use as prompt (empty to quit):
+
+>   Prompt: <bos> there was a girl
+  Generated: there was a girl once mum once once trixie timmy once once once once once lily and once once once lily once upon upon once ben sara one once once once one upon once once jenny once once lily lila once once one tom once once once upon once john once sam once was anna once a once sun once once once once once one once once upon once upon once one once upon once tom liked once one john there once once once once once once tom once upon once once once once one mummy one once once once once once once once once once once once once once upon once once once once outside once molly it once once once once billy once one once once upon once once tommy tim once one lily once upon tom upon one it once timmy once tom once once once once once lily once tom once john upon once once once once once once once once once once once once john once once once once john once once once upon upon once anna once jack once once once loves day upon once once once lila john once once once once sam once once once sara
+
+>   Prompt: <bos> one <unk> a bird
+  Generated: one <unk> a bird once once john once tom once once upon once once upon once upon once once once lila john once once once once molly once once once once once once once one one once it lily once one once once once day once once once one once once john once once lily once upon sara once once once once molly ben once a lily one once once lily once once once once once once once lily upon day once upon one jill , once once mummy once once sara tom once once once was lily mia one once one once once once once once once sara once once once once once once once tom once upon once once once once was once once once once once he once ben once once once once once once once john once one once once tommy once once it once once once once mandy upon once tom once out once tim once once once once once tim once once once once once once one anna ben one once once sam was and once once once once tom once once lily john once once once once once tim once once one once upon once one was
+
+>   Prompt: <bos> there once was a boys and
+  Generated: there once was a boys and jimmy once once lily once once upon once once once once once and once once once upon once once once once once once once once once sam once one once once once once once once was once there anna once once sara old sara once jimmy once once one once anna once once once sara john one once and once once once once upon once ben once george there once once once once upon one upon once once once john once once once once and once once once insect once one once once once once once once once upon one once once once and mandy one tim once once lila once tom and once once once once once upon john there once once one once sara sara once sara upon tom once once once once once once once once once one once once once once once once once tom today once tom once tim sara once once once mr. ben once tom tom once once was once lily upon upon one once once sam once one once lily once once once tom mommy loved once sara and will jack once once tom once once once there once once upon molly
+
+>   Prompt: <bos> one day , a
+  Generated: one day , a tom once once one once once once once john once once upon once once tom jane lily tom once once once upon tom one once tom upon there once lily one once upon once once once it tom once once upon once once once tim once once once upon one tim once anna once once once once once once once tommy once once upon once once sam once once once once once once this once once a upon and mia once once it once once once once once once young sam one once once once look once once once once once tom once once once once once once once once once once once once once once once once once one once once once once one and once once once once once tom once jim once once once tom once once once tim lila once once once once once once once tom and once upon one lily once sara once timmy one once once once once john mother lily once once once tom once once loved once once lily once once once once once upon once once one upon once one upon once once once one once once once tim ben
+
+>   Prompt: <bos> once upon a time , an elf
+  Generated: once upon a time , an elf ben one once once once tom upon once tom once once once once anna once upon once once once once once lily once upon once once was once once once once anna upon once once once once was once once one once once trunk one once once once tom once and mum once once tom once tim sara once once once once upon once once one once once sick once two once once once once lily once once once an was once mum upon once upon and day upon little john once once lily once once once polite once tim once once upon upon tom once one upon one once once once once once lily anna and once upon once once once upon one the upon tim day and was once once once once john once john once had once once once once once once tommy one once once sam once once once was once once mama once once one once once one once tim once once once once once one once sara once once once once tom n't upon anna once once one once once once once once once john once lila once once once upon once sara once
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time once one lily once john once lily tom once once tom one once tim once once and once once once upon once sara once once lily once once once one upon once once johnny once john upon once once once tom once once upon once once once once once upon lily once once a once once lily once once one once once once once one once once yesterday once sam one john once once once once once once upon one once upon once once once one a claire upon once once once once upon and once once one once once one tom once once once once mama once once once once once one lily once once once upon once tom lily john once once once lily once tom once once upon once once mummy once tim once once once one once once lily once once once day anna once once upon one tom upon once once tom once once upon anna once once once once once once once upon once always there one john lily once once once upon once once felix once once mummy once upon upon once once day once once once once once once there once john
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time once once once lily there once anna once ben once once upon jill is day once once one once one once once once once one jenny sam john once loves once tom tim once once once upon upon once upon once lily lila once once tim once one once once once once once once once john once once once once once once it once one once molly so jack tom once once sam once once once once once tom once once sam one tim once once once once anna one once once once james once to once once once once one timmy once nana once one once once once once once the once once jake once driver one once one once lily once sam mummy once once tom once once anna one once lila liked once there once once anna likes one tim upon once one john one once once once once once once there john once once once anna once the once once once upon anna once once once lila one once once lily once once once once one once once once once one likes one tom once once upon lily john once upon once once once once once
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time lily anna once sam once once one lily upon lily and once once jane once once sam once once once once molly once once trunk once upon harry once once once upon once once once lily girl once once once once once once once once once once was saw lily lily once one once jill there joey tom once once once tom once lily once once billy once john once one once once one it john there once sandy once once once upon upon once one once lily once upon once once was john sam once once once one once there upon once tom one once once once once and once once once john upon once once once once once one once once one once today once once once once once tom lily once once jacky day upon once one once once once once once lily mum one tom once once once one once lily " once one once tom once once once john once lily once and once once once once once once max jack once and ben one tom once once once sara once once once upon upon tim once day once molly once one upon once once
+
+>   Prompt: <bos> once upon a time
+  Generated: once upon a time once once once once sara the once once once once once tom sam once one once one once once tom once one there once once mum once once once once once once sam once once once i once upon once one once once upon once once once upon once one once one john once once upon one once once once jeff one once saw tom once day once tom sara upon john once one upon john once once in once once once one once upon once sophia once once once once one once once once sara once once once amy once once once once once john once once once once once upon tom once lily once once once once lily once once once upon once lily once once one john once once once once and once once boy once once upon once once once once once once one once molly tim once sara tim once once once anna wanted mum upon are lily ben is once mommy tom once lily once upon lily once lily once john once once tom was once once was once upon once tim john once once once once once john once once once once once
+
+> Exiting prompt mode.
+
+============================================================
+EVALUATION
+============================================================
+Loading vocabulary from ../data/vocab.txt...
+  Loaded 10003 tokens.
+  Model loaded from lm_model.pt (layers=8, d_model=128, heads=4, ffn=512, act=relu, norm_first=False).
+Reading test stories: ../data/tiny/tiny.valid.tokens.200K
+  Test stories: 1101
+  Test tokens: 201121
+
+  Test Cross-Entropy Loss: 9.3655
+  Test Perplexity:         11678.05
+
+============================================================
+EVALUATION
+============================================================
+Loading vocabulary from ../data/vocab.txt...
+  Loaded 10003 tokens.
+  Model loaded from lm_model.pt (layers=8, d_model=128, heads=4, ffn=512, act=relu, norm_first=False).
+Reading test stories: ../data/tiny/tiny.train.tokens.4M
+  Test stories: 19131
+  Test tokens: 4019242
+
+  Test Cross-Entropy Loss: 9.4092
+  Test Perplexity:         12200.35
+
